@@ -1,0 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; // Replace with your font
+  font-size: 14px; // Controls REM sizing
+  min-height: 100vh;
+}
+
+@import "./scss/utils/index";
+@import "./scss/components/index";
+@import "./scss/pages/index";

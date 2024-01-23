@@ -7,7 +7,7 @@ It is based off the Vite Creator but has been expanded to Included:
 - [x] Base Route Config
 - [x] Base API Interface with AXIOS
 - [x] Custom AXIOS Error Handling 
-- [ ] SCSS Functionality
+- [x] SCSS Functionality
 - [ ] Base CI/CD Using Github Actions
 - [ ] Authentication Layer
   - [ ] Azure AD
