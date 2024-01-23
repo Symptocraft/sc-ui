@@ -3,21 +3,16 @@ import { ApiOptions } from "../../types/api/interface.type";
 import AxiosErrorHandler from "./errors";
 
 const APIInterface = async (options: ApiOptions) => {
-    const { url, method, data, headers, params, withCredentials } = options;
+    const { url, method ,headers,withCredentials } = options;
     const api = axios.create({
         baseURL: url,
         method: method,
         withCredentials: withCredentials,
+        headers: {
+            "Content-Type": "application/json",
+            ...headers
+        }
     })
-    if(headers){
-        api.defaults.headers = headers
-    }
-    if(params){
-        api.defaults.params = params
-    }
-    if(data){
-        api.defaults.data = data
-    }
 
     api.interceptors.response.use(
         (response) => response,
