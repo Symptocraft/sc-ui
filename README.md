@@ -8,7 +8,7 @@ It is based off the Vite Creator but has been expanded to Included:
 - [x] Base API Interface with AXIOS
 - [x] Custom AXIOS Error Handling 
 - [x] SCSS Functionality
-- [ ] Base CI/CD Using Github Actions
+- [x] Base CI/CD Pre-Deploy Using Github Actions
 - [ ] Authentication Layer
   - [ ] Azure AD
   - [ ] Google 
