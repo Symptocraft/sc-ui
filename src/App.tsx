@@ -1,10 +1,18 @@
+import { BrowserRouter, Routes } from 'react-router-dom';
+import AppRoutes from './routes'
 import './App.css'
+import { Fragment } from 'react';
 
 function App() {
+  const routes = AppRoutes();
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <BrowserRouter>
+      <Fragment>
+        <Routes>
+          {routes}
+        </Routes>
+      </Fragment>
+    </BrowserRouter>
   )
 }
 
