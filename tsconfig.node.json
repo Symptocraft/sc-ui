@@ -7,6 +7,7 @@
     "allowSyntheticDefaultImports": true,
     "types": [
       "vite/client",
+      "vite-plugin-pwa/react"
     ]
   },
   "include": ["vite.config.ts"]
