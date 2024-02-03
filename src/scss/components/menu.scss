@@ -1,0 +1,26 @@
+.menu {
+    width: 15%;
+    max-width: 250px;
+    height: 100vh;
+    background: $color-grey;
+
+    a {
+        .logo {
+            display: block;
+            box-sizing: border-box;
+            margin: 20px auto;
+            padding: 0 10px;
+            width: 100%;
+            max-width: 200px;
+
+        }
+
+        .icon {
+            display: none;
+            margin: 20px auto;
+            padding: 0 10px;
+            width: 100%;
+            max-width: 80px;
+        }
+    }
+}

@@ -4,6 +4,7 @@ import './App.scss'
 import { Fragment } from 'react';
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Menu from './components/menu';
 
 
 function App() {
@@ -12,9 +13,12 @@ function App() {
     <BrowserRouter>
       <ToastContainer />
       <Fragment>
-        <Routes>
-          {routes}
-        </Routes>
+        <div className="appContainer">
+          <Menu />
+          <Routes>
+            {routes}
+          </Routes>
+        </div>
       </Fragment>
     </BrowserRouter>
   )
